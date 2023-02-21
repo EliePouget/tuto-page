@@ -1,0 +1,68 @@
+html{
+    background:
+            no-repeat
+            linear-gradient(to right bottom, #050316, #111C31);
+}
+body{
+    height: 100%;
+    font-family: sans-serif;
+    color: white;
+    padding: 0 12%;
+    font-size: 14px;
+}nav{
+     display: flex;
+     flex-direction: column;
+ }
+.main-title{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.elements-bar{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.bar{
+    width: 100%;
+    border: 1px solid white;
+    box-shadow: 0 0 30px 2px rgba(204, 194, 178, 0.22);
+    margin: 1em 0 3em 0;
+}
+main{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 3em;
+}.php{
+     font-weight: bold;
+     color: #B264F0;
+ }
+.composer{
+    font-weight: bold;
+    color: #E8D95A;
+}
+.phpMyAdmin{
+    font-weight: bold;
+    color: #E8AF5A;
+}
+.symfony{
+    font-weight: bold;
+    color : #7FE85A;
+}
+footer{
+    width: 100%;
+    height: 3em;
+    position: absolute;
+    left: 0;
+    background-color: #00195A;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.title{
+    font-size: 32px;
+    margin: 1em 0em;
+}

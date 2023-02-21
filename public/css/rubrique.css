@@ -1,0 +1,12 @@
+.symfony-image{
+    border-radius: 30px;
+    height: 300px;
+    width: 750px;
+}
+main{
+    display: flex;
+    align-items: center;
+}
+.clock{
+    height: 30px;
+}

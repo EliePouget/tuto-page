@@ -1,0 +1,88 @@
+.last-rubrique-info{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.image-last{
+    height: 300px;
+    margin-right: 40px;
+    border-radius: 20px;
+}
+.image{
+    margin-bottom: 20px;
+    height: 300px;
+    border-radius: 20px;
+}
+.last-rubrique{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 125px 200px 200px;
+}
+.rubrique{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
+}
+.content-last-rubrique{
+    display: flex;
+    flex-direction: row;
+}
+.content-text-last-rubrique{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title-last-rubrique{
+    font-size: 40px;
+}
+.title-rubrique{
+    font-size: 18px;
+}
+.date{
+    font-weight: bolder;
+}
+.text-content-last-rubrique{
+    font-size: 20px;
+}
+.text-content-rubrique{
+    font-size: 14px;
+}
+.text-last-rubrique{
+    display: flex;
+    flex-direction: column;
+}
+.text-rubrique{
+    margin-bottom: 30px;
+}
+.symfony{
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.type{
+    margin: 10px 0;
+}
+.php{
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.composer{
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.phpMyAdmin{
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.clock{
+    height: 30px;
+}
+.time-rubrique{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.ligne{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
