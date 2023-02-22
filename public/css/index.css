@@ -3,6 +3,10 @@ html{
             no-repeat
             linear-gradient(to right bottom, #050316, #111C31);
 }
+.enceinte{
+    height: 40px;
+    margin-left: 20px;
+}
 body{
     height: 100%;
     font-family: sans-serif;

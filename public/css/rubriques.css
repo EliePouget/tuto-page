@@ -76,6 +76,10 @@
 .clock{
     height: 30px;
 }
+.enceinte-rubrique{
+    height: 20px;
+    margin-left: 10px;
+}
 .time-rubrique{
     display: flex;
     justify-content: space-between;
