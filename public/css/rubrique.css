@@ -9,4 +9,42 @@ main{
 }
 .clock{
     height: 30px;
+    align-items: center;
+}
+.title-content{
+    font-size: 32px;
+    display: flex;
+    justify-content: space-around;
+}
+.element-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    padding: 50px 400px
+}
+.date{
+    font-weight: bolder;
+}
+.time-text-rubrique{
+    font-weight: bolder;
+    display: flex;
+    align-self: center;
+}
+.time-rubrique{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bar-element{
+    margin: 15px ;
+    display: flex;
+}
+.left{
+    margin: 15px 15px 15px 0;
+}
+.right{
+    margin: 15px 0 15px 15px;
 }

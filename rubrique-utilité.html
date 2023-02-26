@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="public/css/index.css" rel="stylesheet">
-    <link href="public/css/rubrique.css" rel="stylesheet">
-    <title>Accueil</title>
-  </head>
-  <body>
-  <nav>
-    <span class="main-title title">Rubrique</span>
-    <div class="elements-bar">
-      <a href="index.html">Accueil</a>
-      <a href="rubriques.html">Rubriques</a>
-      <a href="">Quizz</a>
-    </div>
-    <span class="bar"></span>
-  </nav>
-  <main>
-    <img src="public/img/synfony.jpg" rel="symfony-image" class="symfony-image">
-    <div class="content">
-      <div class="nav-content">
-        <span class="title-content">Utilité</span>
-        <div class="element-bar">
-          <span class="symfony">#symfony</span>
-          <div class="time">
-            <img class="clock" src="public/img/gray-clock-icon-symbol-transparent-png-11639648068jmctw3srro.png">
-            <span>3-5 minutes</span>
-            <span>11 février 2023</span>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="public/css/index.css" rel="stylesheet">
+  <link href="public/css/rubrique.css" rel="stylesheet">
+  <title>Rubrique-Utilité</title>
+</head>
+<body>
+<nav>
+  <span class="main-title title">Rubrique</span>
+  <div class="elements-bar">
+    <a href="index.html">Accueil</a>
+    <a href="rubriques.html">Rubriques</a>
+    <a href="">Quizz</a>
+  </div>
+  <span class="bar"></span>
+</nav>
+<main>
+  <img src="public/img/synfony.jpg" rel="symfony-image" class="symfony-image">
+  <div class="content">
+    <div class="nav-content">
+      <span class="title-content">Utilité de la base de donnée</span>
+      <div class="element-bar">
+        <div>
+          <span class="symfony left">#symfony</span>
+        </div>
+        <div class="time-rubrique">
+          <div class="bar-element">
+            <img class="clock" src="public/img/clock.png" alt="clock">
+            <span class="time-text-rubrique">3-5 minutes</span>
+          </div>
+          <div class="right">
+            <span class="date">11 février 2023</span>
           </div>
         </div>
       </div>
-      <div class="text-content">
-        ............................
-      </div>
     </div>
-  </main>
-  <footer>
+    <div class="text-content">
+      <p>Voici les étapes pour implémenter une base de données MySQL dans un projet Symfony 5.4 :<br>
+        Une base de données MySQL est utilisée dans un projet Symfony pour stocker et gérer les données de l'application.<br>
+        Dans un projet Symfony, on utilise souvent une base de données relationnelle pour stocker des informations structurées, telles que les utilisateurs,
+        les articles, les commentaires, etc.<br>
+        MySQL est un système de gestion de base de données relationnelle (SGBDR) open source populaire et est souvent utilisé avec Symfony.<br>
+        Dans un projet Symfony, on utilise souvent la bibliothèque Doctrine pour gérer les interactions avec la base de données. <br>
+        Doctrine est un ORM (Object-Relational Mapping) qui permet de représenter les tables de la base de données sous forme d'objets PHP. <br>
+        Cela permet de simplifier les interactions avec la base de données et de rendre le code plus facile à maintenir.<br>
+        Grâce à l'utilisation de MySQL dans un projet Symfony, on peut facilement créer des requêtes pour insérer, mettre à jour et récupérer des données à partir de la base de données.<br>
+        Cela permet de rendre l'application plus dynamique et d'offrir une expérience utilisateur plus personnalisée.<br>
+        <br>
+        En résumé, une base de données MySQL est un élément essentiel dans un projet Symfony car elle permet de stocker et de gérer les données de l'application de manière efficace et fiable grâce à la bibliothèque Doctrine.
+        de Doctrine pour tirer pleinement parti de l'implémentation de la base de données.<br>
+      </p>
+    </div>
+  </div>
+</main>
+<footer>
+  <a href="apropos.html">
     <span class="apropos">a propos de nous</span>
-    <span class="text">@copyright 2023 - All Right Reserved.</span>
-  </footer>
+  </a>  <span class="text">@copyright 2023 - All Right Reserved.</span>
+</footer>
 
-  </body>
+</body>
 </html>

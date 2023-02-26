@@ -3,6 +3,7 @@
 .introduction{
     display: flex;
     flex-direction: column;
+    padding: 0 200px;
 }
 
 .database-image{

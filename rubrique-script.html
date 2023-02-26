@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="public/css/index.css" rel="stylesheet">
+  <link href="public/css/rubrique.css" rel="stylesheet">
+  <title>Rubrique-Script</title>
+</head>
+<body>
+<nav>
+  <span class="main-title title">Rubrique</span>
+  <div class="elements-bar">
+    <a href="index.html">Accueil</a>
+    <a href="rubriques.html">Rubriques</a>
+    <a href="">Quizz</a>
+  </div>
+  <span class="bar"></span>
+</nav>
+<main>
+  <img src="public/img/symfony.png" rel="symfony-image" class="symfony-image">
+  <div class="content">
+    <div class="nav-content">
+      <span class="title-content">Création d'un script</span>
+      <div class="element-bar">
+        <div>
+          <span class="php left">#php</span>
+          <span class="composer left">#composer</span>
+        </div>
+        <div class="time-rubrique">
+          <div class="bar-element">
+            <img class="clock" src="public/img/clock.png" alt="clock">
+            <span class="time-text-rubrique">3-5 minutes</span>
+          </div>
+          <div class="right">
+            <span class="date">11 février 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-content">
+      <p>Voici les étapes pour créer des scripts Composer pour administrer une base de données MySQL dans un projet Symfony 5.4 :<br>
+        1. Créez un fichier composer.json à la racine de votre projet et définissez un script personalisé.<br><br><br>
+        swift<br>
+        {<br>
+        "scripts": {<br>
+        "post-install-cmd": [<br>
+        "YourVendor\\YourBundle\\Composer\\ScriptHandler::createSchema"<br>
+        ],<br>
+        "post-update-cmd": [<br>
+        "YourVendor\\YourBundle\\Composer\\ScriptHandler::updateSchema"<br>
+        ]<br>
+        }<br>
+        }<br>
+
+        Créez un répertoire Composer dans le bundle de votre choix (par exemple, YourVendor\YourBundle\Composer) et créez un fichier ScriptHandler.php dans ce répertoire.<br>
+        Dans le fichier ScriptHandler.php, définissez les méthodes createSchema et updateSchema qui vont être appelées par les scripts définis dans le fichier composer.json.<br>
+        <br>
+        <br>
+        php<br>
+        < ?php<br>
+        <br>
+        namespace YourVendor\YourBundle\Composer;<br>
+        <br>
+        use Symfony\Component\Process\Process;<br>
+        <br>
+        class ScriptHandler<br>
+        {<br>
+        public static function createSchema()<br>
+        {<br>
+        $process = new Process('php bin/console doctrine:schema:create');<br>
+        $process->run();<br>
+        if (!$process->isSuccessful()) {<br>
+        throw new \RuntimeException(sprintf(<br>
+        'An error occurred while creating the database schema: %s',<br>
+        $process->getErrorOutput()<br>
+        ));<br>
+        }<br>
+        }<br>
+        <br>
+        public static function updateSchema()<br>
+        {<br>
+        $process = new Process('php bin/console doctrine:schema:update --force');<br>
+        $process->run();<br>
+        if (!$process->isSuccessful()) {<br>
+        throw new \RuntimeException(sprintf(<br>
+        'An error occurred while updating the database schema: %s',<br>
+        $process->getErrorOutput()<br>
+        ));<br>
+        }<br>
+        }<br>
+        }<br>
+        <br>
+        Exécutez les scripts en lançant la commande suivante :<br>
+        composer install<br>
+        <br>
+        ou<br>
+        sql<br>
+        composer update<br>
+        <br>
+        Ces étapes vous permettront de créer des scripts Composer pour administrer une base de données MySQL dans un projet Symfony 5.4.<br>
+        Vous pouvez personnaliser les scripts en ajoutant d'autres commandes de gestion de base de données pour répondre à vos besoins spécifiques.<br>
+      </p>
+    </div>
+  </div>
+</main>
+<footer>
+  <a href="apropos.html">
+    <span class="apropos">a propos de nous</span>
+  </a>  <span class="text">@copyright 2023 - All Right Reserved.</span>
+</footer>
+
+</body>
+</html>
