@@ -3,6 +3,9 @@ html{
             no-repeat
             linear-gradient(to right bottom, #050316, #111C31);
 }
+.apropos{
+    text-decoration: underline;
+}
 .enceinte{
     height: 40px;
     margin-left: 20px;
