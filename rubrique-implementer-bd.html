@@ -42,20 +42,31 @@
       <div class="text-content">
         <p>Voici les étapes pour implémenter une base de données MySQL dans un projet Symfony 5.4 :<br>
           Installer le paquet de gestion de bases de données Doctrine dans Symfony en utilisant la commande suivante : <br>
-          perl <br>
-          composer require symfony/orm-pack<br>
+          <pre><code class="language-css">
+     perl
+     composer require symfony/orm-pack
+          </code></pre>
           <br>
+
           Configurer la connexion à la base de données en modifiant le fichier .env pour inclure les informations d'identification pour votre base de données MySQL :<br>
-          bash<br>
-          DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name<br>
+          <pre><code>
+     bash
+     DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name
+          </code></pre>
           <br>
+
           Créez une entité pour représenter les données stockées dans la base de données en utilisant la commande suivante :<br>
-          python<br>
-          php bin/console make:entity<br>
+        <pre><code>
+     python
+     php bin/console make:entity
+          </code></pre>
           <br>
+
           Générez le schema de la base de données à partir des entités en utilisant la commande suivante :<br>
-          sql<br>
-          php bin/console doctrine:schema:update --force<br>
+        <pre><code>
+     sql
+     php bin/console doctrine:schema:update --force
+          </code></pre>
           <br>
           Utilisez les méthodes du gestionnaire d'entités Doctrine pour interagir avec la base de données dans les controlleurs de votre application.<br>
           Ces étapes fournissent une base solide pour implémenter une base de données MySQL dans un projet Symfony 5.4. Il est important de bien comprendre les concepts de Doctrine pour tirer pleinement parti de l'implémentation de la base de données.<br>
