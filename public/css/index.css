@@ -57,8 +57,8 @@ main{
     color : #7FE85A;
 }
 footer{
-    width: 100%;
-    height: 3em;
+    padding: 40px;
+    width: 90%;
     position: absolute;
     left: 0;
     background-color: #00195A;
@@ -78,4 +78,17 @@ code{
     display: block;
     background-color: #050316;
 }
-
+.apropos-denous{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 66% 20px 20px;
+}
+.social-network{
+    padding-right: 66%
+}
+.network-image{
+    width: 50px;
+}
+h4{
+    margin: 0;
+}
