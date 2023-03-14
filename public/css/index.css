@@ -56,15 +56,6 @@ main{
     font-weight: bold;
     color : #7FE85A;
 }
-footer{
-    padding: 40px;
-    width: 90%;
-    position: absolute;
-    left: 0;
-    background-color: #00195A;
-    display: flex;
-    flex-direction: column;
-}
 a{
     text-decoration: none;
     color: white;
@@ -78,17 +69,63 @@ code{
     display: block;
     background-color: #050316;
 }
-.apropos-denous{
+.grid-footer {
+
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+    align-items: center;
+}
+footer{
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+@media (min-width: 500px) {
+    .grid-footer {
+        grid-auto-flow: column;
+    }
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+
+.footer-link:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
+li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+}
+
+/* below is just for demo styling */
+
+.footer {
     display: flex;
-    flex-direction: column;
-    padding: 20px 66% 20px 20px;
+    background-color: #002a38;
+    line-height: 1.3;
+    font-family: Menlo, monospace;
 }
-.social-network{
-    padding-right: 66%
-}
-.network-image{
-    width: 50px;
-}
-h4{
-    margin: 0;
+
+@keyframes wave-animation {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
 }

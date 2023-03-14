@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="public/css/quizz.css" rel="stylesheet">
+    <link href="public/css/index.css" rel="stylesheet">
+    <title>Quizz</title>
+  </head>
+  <body>
+  <nav>
+    <span class="main-title title">Qui somme-nous</span>
+    <div class="elements-bar">
+      <a href="index.html">Accueil</a>
+      <a href="rubriques.html">Rubriques</a>
+      <a href="quizz.html">Quizz</a>
+    </div>
+    <span class="bar"></span>
+  </nav>
+  <main>
+    <h1>Quiz HTML</h1>
+
+    <form action="quizz.php" method="post">
+      <!-- Question 1 -->
+      <p>1. Quel est le but d'utiliser Composer dans un projet Symfony ?</p>
+      <input type="radio" name="q1" value="a">A. Installer des dépendances de manières efficace et fiable<br>
+      <input type="radio" name="q1" value="b">B. Créer des scripts de gestion de base de données<br>
+      <input type="radio" name="q1" value="c">C. Créer un nouveau projet Symfony<br>
+
+      <!-- Question 2 -->
+      <p>2. Comment installer Composer dans un projet Symfony ?</p>
+      <input type="radio" name="q2" value="a">A. En téléchargeant et en installant Composer sur votre ordinateur<br>
+      <input type="radio" name="q2" value="b">B. En créant un fichier composer.json<br>
+      <input type="radio" name="q2" value="c">C. En exécutant la commande composer create-project<br>
+
+      <!-- Question 3 -->
+      <p>3. Comment exécuter la commande d'installation de Composer dans un projet Symfony ?</p>
+      <input type="radio" name="q3" value="a">A. En lançant la commande composer install dans le terminal ou une invite de commande<br>
+      <input type="radio" name="q3" value="b">B. En créant un fichier composer.sh<br>
+      <input type="radio" name="q3" value="c">C. En utilisant l'interface graphique de Composer<br>
+
+      <!-- Question 4 -->
+      <p>4. Quel est l'objectif de créer des scripts Composer pour administrer une base de données MySQL dans un projet Symfony 5.4 ?</p>
+      <input type="radio" name="q4" value="a">A. Automatiser les tâches de gestion de base de données <br>
+      <input type="radio" name="q4" value="b">B.  Mettre à jour les dépendances de votre projet<br>
+      <input type="radio" name="q4" value="c">C. Créer un nouveau projet Symfony<br>
+
+      <!-- Question 5 -->
+      <p>5. Comment définir un script personnalisé dans un fichier composer.json ?</p>
+      <input type="radio" name="q5" value="a">A. En ajoutant une section scripts dans le fichier composer.json et en définissant un script personalisé dans cette section<br>
+      <input type="radio" name="q5" value="b">B. En créant un fichier scripts.json à la racine de votre projet<br>
+      <input type="radio" name="q5" value="c">C. En utilisant l'interface graphique de Composer
+      <br>
+
+      <!-- Question 6 -->
+      <p>6. Où devriez-vous créer un répertoire Composer dans un projet Symfony 5.4 ?</p>
+      <input type="radio" name="q6" value="a">A. Dans le bundle de votre choix<br>
+      <input type="radio" name="q6" value="b">B. Dans le répertoire racine de votre projet <br>
+      <input type="radio" name="q6" value="c">C. Dans le répertoire vendor de votre projet<br>
+
+      <!-- Question 7 -->
+      <p>7. Comment définir les méthodes createSchema et updateSchema dans le fichier ScriptHandler.php ?</p>
+      <input type="radio" name="q7" value="a">A. En les définissant comme des méthodes publiques statiques qui exécutent les commandes nécessaires pour créer et mettre à jour le schéma de la base de données<br>
+      <input type="radio" name="q7" value="b">B. En les définissant comme des méthodes privées statiques<br>
+      <input type="radio" name="q7" value="c">C. En les définissant comme des méthodes publiques non statiques<br>
+
+      <!-- Question 8 -->
+      <p>8. Quelle commande devriez-vous exécuter pour créer le schéma de la base de données dans un projet Symfony 5.4 ?</p>
+      <input type="radio" name="q8" value="a">A. php bin/console doctrine:schema:create<br>
+      <input type="radio" name="q8" value="b">B. php bin/console doctrine:database:create<br>
+      <input type="radio" name="q8" value="c">C. php bin/console doctrine<br>
+
+      <p>9. Comment implémenter une base de données MySQL dans un projet Symfony 5.4 ?</p>
+      <input type="radio" name="q9" value="a">A. En utilisant la bibliothèque Doctrine pour gérer les interactions avec la base de données<br>
+      <input type="radio" name="q9" value="b">B. En créant manuellement les tables et les relations avec SQL<br>
+      <input type="radio" name="q9" value="c">C. En utilisant l'interface graphique de MySQL<br>
+
+      <p>10. Pourquoi utiliser Doctrine pour gérer les interactions avec la base de données dans un projet Symfony 5.4 ?</p>
+      <input type="radio" name="q10" value="a">A. Parce que Doctrine est un moyen efficace et fiable pour gérer les interactions avec une base de données dans un projet Symfony<br>
+      <input type="radio" name="q10" value="b">B. Parce que c'est le seul moyen de gérer les interactions avec une base de données dans un projet Symfony<br>
+      <input type="radio" name="q10" value="c">C. Parce que c'est une façon plus rapide de gérer les interactions avec une base de données dans un projet Symfony<br>
+
+      <button type="submit" name="submit">Soumettre mes réponses</button>
+  </main>
+  <footer>
+    <div class="footer">
+      <ul class="grid-footer">
+        <li><a class="footer-link" href="https://twitter.com/">Twitter</a></li>
+        <li><a class="footer-link" href="https://codepen.io/">Codepen</a></li>
+        <li><a class="footer-link" href="mailto:pougetelie@gmail.com">Email</a></li>
+        <li><a class="footer-link" href="https://dribbble.com/">Dribbble</a></li>
+        <li><a class="footer-link" href="https://github.com/">Github</a></li>
+        <li><a class="footer-link" href="apropos.html">A propos de nous</a></li>
+        <li>
+          <p>👋</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  </body>
+</html>
